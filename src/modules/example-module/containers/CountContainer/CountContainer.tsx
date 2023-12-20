@@ -1,4 +1,4 @@
-import { Button } from "../../components/Button/Button.styles"
+import Button from "../../components/Button/Button"
 import { Container } from "./CountContainer.styles"
 import { useTranslation } from 'react-i18next'
 
@@ -13,7 +13,7 @@ const CountContainer = () => {
       <h1>
         {t('counter')}: {count}
       </h1>
-      <Button onClick={add} data-testid="count-button">
+      <Button onClick={add} data-testid="count-button" variant="contained">
         {t('count')}
       </Button>
     </Container>

@@ -1,8 +1,9 @@
 import React from "react"
 import { Button as StyledButton } from "./Button.styles"
+import { ButtonProps } from '@mui/material'
 
-interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  children?: React.ReactElement | string;
+interface Props extends ButtonProps {
+  children?: React.ReactNode;
 }
 
 const Button = (props: Props) => {
@@ -11,6 +12,7 @@ const Button = (props: Props) => {
     <StyledButton {...props}>
       {children}
     </StyledButton>
+
   )
 }
 
