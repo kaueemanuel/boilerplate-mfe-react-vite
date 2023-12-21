@@ -1,4 +1,4 @@
-import { css } from "@emotion/react";
+import { css } from "@emotion/react"
 
 // AQUI É COLOCADO AS CONFIGURAÇÕES GLOBAIS DE CSS
 const globalStyle = css`
@@ -19,6 +19,6 @@ const globalStyle = css`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-`;
+`
 
-export default globalStyle;
+export default globalStyle

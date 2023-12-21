@@ -11,7 +11,12 @@ module.exports = {
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
-  plugins: ['promise', 'react-refresh', 'react-app/jest'],
+  plugins: ['promise', 'react-refresh', 'react', '@typescript-eslint'],
+  settings: {
+    react: {
+      version: 'latest',
+    },
+  },
   rules: {
     'react-refresh/only-export-components': [
       'warn',
@@ -31,6 +36,7 @@ module.exports = {
     "promise/no-return-in-finally": "error",
     "prefer-arrow-callback": "error",
     "linebreak-style": "off",
-    "semi": ["error", "never"]
+    "semi": ["error", "never"],
+    "quotes": [2, "double", { "avoidEscape": true, "allowTemplateLiterals": true }]
   },
 }

@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "@emotion/styled"
 
 export const Container = styled.div`
   display: flex;
@@ -7,4 +7,4 @@ export const Container = styled.div`
   flex-direction: column;
   height: 100vh;
   width: 100%;
-`;
+`

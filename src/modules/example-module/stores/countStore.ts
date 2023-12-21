@@ -1,4 +1,4 @@
-import { create } from "zustand";
+import { create } from "zustand"
 
 interface CountState {
   count: number;
@@ -8,6 +8,6 @@ interface CountState {
 const useStore = create<CountState>((set) => ({
   count: 0,
   add: () => set((state) => ({ count: state.count + 1 })),
-}));
+}))
 
-export default useStore;
+export default useStore

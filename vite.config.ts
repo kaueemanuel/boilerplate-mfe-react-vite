@@ -1,9 +1,9 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import federation from "@originjs/vite-plugin-federation";
-import dns from "dns";
+import { defineConfig } from "vite"
+import react from "@vitejs/plugin-react"
+import federation from "@originjs/vite-plugin-federation"
+import dns from "dns"
 
-dns.setDefaultResultOrder("verbatim");
+dns.setDefaultResultOrder("verbatim")
 
 export default defineConfig({
   plugins: [
@@ -36,4 +36,4 @@ export default defineConfig({
   define: {
     process: process,
   },
-});
+})

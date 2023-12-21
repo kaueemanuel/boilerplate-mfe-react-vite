@@ -1,6 +1,6 @@
 import React from "react"
 import { Button as StyledButton } from "./Button.styles"
-import { ButtonProps } from '@mui/material'
+import { ButtonProps } from "@mui/material"
 
 interface Props extends ButtonProps {
   children?: React.ReactNode;

@@ -1,8 +1,8 @@
 import Button from "../../components/Button/Button"
 import { Container } from "./CountContainer.styles"
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from "react-i18next"
 
-import useCountStore from "../../stores/countStore";
+import useCountStore from "../../stores/countStore"
 
 const CountContainer = () => {
   const { t } = useTranslation()
@@ -11,10 +11,10 @@ const CountContainer = () => {
   return (
     <Container>
       <h1>
-        {t('counter')}: {count}
+        {t("counter")}: {count}
       </h1>
       <Button onClick={add} data-testid="count-button" variant="contained">
-        {t('count')}
+        {t("count")}
       </Button>
     </Container>
   )
