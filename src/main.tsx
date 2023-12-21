@@ -42,7 +42,7 @@ const Main = () => {
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <BrowserRouter>
-    <Main />,
+    <Main />
   </BrowserRouter>
 )
 
