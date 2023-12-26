@@ -17,6 +17,7 @@ export default defineConfig(({ mode }) => {
         filename: "remote-mfe-entry.js",
         exposes: {
           "./App": "./src/main.tsx",
+          "./CountStore": "./src/modules/example-module/stores/countStore.ts",
         },
         shared: {
           "react": "*",
