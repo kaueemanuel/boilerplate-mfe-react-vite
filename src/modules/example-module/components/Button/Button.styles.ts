@@ -1,5 +1,5 @@
 import styled from "@emotion/styled"
 
-import ButtonMUI from "@mui/material/Button"
+import { Button as ButtonUI } from "boilerplate-ui-mui-storybook/components"
 
-export const Button = styled(ButtonMUI)``
+export const Button = styled(ButtonUI)``

@@ -3,11 +3,9 @@ import ReactDOM from "react-dom/client"
 import App from "./App.tsx"
 import "./lib/i18n.ts"
 import { BrowserRouter } from "react-router-dom"
-import { ThemeProvider as ThemeProviderEmotion } from "@emotion/react"
-import { ThemeProvider as ThemeProviderMUI } from "@mui/material"
-import { ThemeProviderProps } from "@mui/material/styles/ThemeProvider"
-import { CssBaseline } from "@mui/material"
+import { CssBaseline } from "boilerplate-ui-mui-storybook/material"
 import { Global } from "@emotion/react"
+import { ThemeProvider } from "boilerplate-ui-mui-storybook/themes"
 
 import theme from "./theme"
 
@@ -17,21 +15,10 @@ import "@fontsource/roboto/500.css"
 import "@fontsource/roboto/700.css"
 import globalStyle from "./globalStyles.ts"
 
-const ThemeProvider = ({ theme, children }: ThemeProviderProps) => {
-  return (
-    <ThemeProviderEmotion theme={theme}>
-      <ThemeProviderMUI theme={theme}>
-        {children}
-      </ThemeProviderMUI>
-    </ThemeProviderEmotion>
-  )
-}
-
-
 const Main = () => {
   return (
     <React.StrictMode>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme.lightTheme}>
         <CssBaseline />
         <Global styles={globalStyle} />
         <App />
